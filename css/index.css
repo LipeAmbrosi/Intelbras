@@ -1,0 +1,32 @@
+@font-face{
+    font-family: 'intelbras light';
+    src: url(./fontes/IntelbrasSans-Light.ttf) format('truetype');
+
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}  
+
+@font-face{
+    font-family: 'intelbras medium';
+    src: url(./fontes/IntelbrasSans-Medium.ttf) format('truetype');
+
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}   
+
+@font-face {
+    font-family: 'intelbras regular';
+    src: url(./fontes/IntelbrasSans-Regular.ttf) format('truetype');
+
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: 'intelbras regular';
+    font-size: 20px;
+    
+}
