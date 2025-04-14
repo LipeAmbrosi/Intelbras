@@ -63,6 +63,7 @@ img {
     display: flex;
     align-items: center;
     height: 4vw;
+    width: 100%;
 
     
 }
@@ -71,6 +72,7 @@ img {
 
     display: flex;
     align-items: center;
+    padding: 4%;
 
 }
 
@@ -80,8 +82,6 @@ img {
     height: 7vw;
     max-width: 200px;
     object-fit: contain;
-
-    
 }
 
 /*Banner */
@@ -158,7 +158,7 @@ img {
 
     display: grid;
     width: 100%;
-    max-width: 800px;
+    max-width: 1000px;
     height: auto;
     gap: 5vw;
     grid-template-columns: repeat(3, 1fr);
@@ -174,9 +174,24 @@ img {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    border-radius: 12%;
+    
 }
 
-.caixa .imagem img {
+.caixa-imagem {
+
+    background-color: #06CB3F;
+    border-bottom: black;
+}
+
+.caixa p {
+
+    font-family: 'intelbras medium';
+    padding: 0 0 25% 5%;
+
+}
+
+ .imagem img {
 
     width: 100%;
     height: auto;
