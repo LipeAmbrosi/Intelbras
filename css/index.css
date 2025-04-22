@@ -32,3 +32,55 @@
     box-sizing: border-box;
 }
 
+body{
+     background-color:#EFEFED;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 480px) {
+
+    #cabecalho-branco {
+
+        background-color: white;
+
+        img{
+           width: 100px;
+           height: auto;
+        }
+    }
+
+    #cabecalho{ 
+
+        display: flex;
+
+        #banner{
+
+            flex: 1;
+        }
+
+        #fundo-verde{
+
+            flex: 1;
+        
+        }
+    }
+
+    #logo {
+        
+    }
+
+}
+@media (max-width: 768px) {
+
+}
+@media (max-width: 1024px) {
+
+}
+@media (max-width: 1200px) {
+
+}
+
