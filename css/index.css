@@ -25,11 +25,19 @@
     font-display: swap;
 }
 
+#banner-mobile {
+    display: none; 
+}
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+html {
+
+    font-size: 16px;
 }
 
 body{
@@ -39,48 +47,81 @@ body{
 img{
     max-width: 100%;
     height: auto;
+    
 }
 
-@media (max-width: 480px) {
+
+
+@media (min-width: 1px) and (max-width: 480px) {
+
+    #banner {
+
+        display: none;
+    }
 
     #cabecalho-branco {
 
         background-color: white;
 
         img{
+
            width: 100px;
-           height: auto;
+           height: 100%;
         }
     }
 
-    #cabecalho{ 
+    #banner-mobile{ 
 
         display: flex;
-
-        #banner{
-
-            flex: 1;
-        }
-
-        #fundo-verde{
-
-            flex: 1;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
         
+        #imagem-mobile {
+            
+            display: block;
+            padding: 0;
+
+            img{
+
+                display: block;
+                width: 100%;
+            }
+        }
+        #fundo-verde-mobile{
+
+            background-color: #035144;  
+            padding: 6rem 0;
+            color: white;
+
+            h1 {
+                font-family: 'intelbras medium';
+                padding: 0 0 0.5rem 1.9rem;
+            }
+
+            p{
+                font-family: 'intelbras light';
+                padding: 0 0 0 1.9rem;
+            }
+    
+    
+        }
+        
+        .fundo-verde-mobile {
+
+            background-color: #035144;
+            color: white;
         }
     }
 
-    #logo {
-        
-    }
-
 }
-@media (max-width: 768px) {
-
+@media (min-width: 481px) and (max-width: 768px) {
+    
 }
-@media (max-width: 1024px) {
-
+@media  (min-width: 769px) and (max-width: 1024px) {
+ 
 }
-@media (max-width: 1200px) {
-
+@media (min-width: 1025px) {
+   
 }
 
