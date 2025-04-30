@@ -153,7 +153,7 @@ body {
             .imagem{
                 background: linear-gradient(to top right, #04a331,#37ED83);
                 border-radius: 1.9rem 1.9rem 0 0;
-                border-bottom: 0.1rem solid black;
+    
             }
 
             .bloco-informacao{
@@ -194,8 +194,9 @@ body {
         display: flex;
         flex-direction: column;
         background-color: white;
-        padding: 1rem 1rem 0 1rem;
+        padding: 1rem 1rem 3rem 1rem;
         align-items: center;
+        
         
         ul{
             list-style-type: none;
@@ -367,7 +368,7 @@ body {
             .imagem{
                 background: linear-gradient(to top right, #04a331,#37ED83);
                 border-radius: 1.9rem 1.9rem 0 0;
-                border-bottom: 0.1rem solid black;
+                
             }
 
             .bloco-informacao{
@@ -412,7 +413,7 @@ body {
         display: flex;
         flex-direction: column;
         background-color: white;
-        padding: 1rem 1rem 0 1rem;
+        padding: 1rem 1rem 3rem 1rem;
         align-items: center;
         
         ul{
@@ -479,10 +480,10 @@ body {
     
     }
 }
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 767px) {
     
     html{
-        font-size: 21px;
+        font-size: 17px;
     }
 
     #banner {
@@ -582,7 +583,6 @@ body {
             .imagem{
                 background: linear-gradient(to top right, #04a331,#37ED83);
                 border-radius: 1.9rem 1.9rem 0 0;
-                border-bottom: 0.1rem solid black;
             }
 
             .bloco-informacao{
@@ -623,7 +623,7 @@ body {
         display: flex;
         flex-direction: column;
         background-color: white;
-        padding: 1rem 1rem 0 1rem;
+        padding: 1rem 1rem 3rem 1rem;
         align-items: center;
         
         ul{
@@ -778,59 +778,52 @@ body {
         padding: 3rem 0;
         gap: 1rem;
         
-    
+        .caixa {
 
-        .caixa{
             display: flex;
-            flex:1;
-            flex-direction: column;
+            flex-direction: row;
             align-items: center;
-            border: 0.1rem ;
-            width: 21rem;
+            width: 33rem;
             height: auto;
-            margin: 1rem 0;
             border-radius: 2rem;
-            padding: 0 0 0.5rem 0;
             background-color: white;
-            
 
-            .imagem{
+            .imagem {
+
                 background: linear-gradient(to top right, #04a331,#37ED83);
-                border-radius: 1.9rem 1.9rem 0 0;
-                border-bottom: 0.1rem solid black;
+                border-radius: 1.9rem 0rem 0rem 1.9rem;
+                width: 30rem;
+                height: auto;
+                flex: 1;
+
             }
 
-            .bloco-informacao{
+            .bloco-informacao {
 
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-                padding: 1rem 0 0 0;
-                flex-grow: 1;
-
-                h1{
-                    font-family: 'intelbras medium', arial, sans-serif;
-                }
-        
-                p{
-                    font-family: 'intelbras light', arial, sans-serif;
-                    padding: 0 2.5rem 0.5rem ;
-                    text-align: center;
-                    text-decoration: none;
-                }
-
+                flex:1;
+                padding: 0rem 0rem 0rem 1rem;
                 
-            }
+                h1 {
 
-            a{
-                text-decoration: none;
-                color: #06CB3F;
+                    font-family: 'intelbras medium', Arial, sans-serif;
+                    font-size: 2rem;
+                    padding: 0rem 0rem 1rem 0rem;
+                }
+
+                p {
+
+                    font-family: 'intelbras light', Arial, sans-serif;
+                    font-size: 0.8rem;
+                    padding: 0rem 0rem 0.5rem 0rem;
+                }
+           
             }
         }
-        
-
-        
+            
+        a{
+            text-decoration: none;
+            color: #06CB3F;
+        }
     }
 
     #rodape{
@@ -838,7 +831,7 @@ body {
         display: flex;
         flex-direction: column;
         background-color: white;
-        padding: 1rem 1rem 0 1rem;
+        padding: 1rem 1rem 2rem 1rem;
         align-items: center;
         
         ul{
@@ -847,7 +840,7 @@ body {
 
         #links-mobile{
             display: flex;
-            gap: 3rem;
+            gap: 4rem;
         }
         
         li{
@@ -889,11 +882,11 @@ body {
                 ul{
                     justify-content: center;
                     display: flex;    
-                    gap: 2rem;
+                    gap: 2.5rem;
                     
                     img{
 
-                        width: 2rem;
+                        width: 2.5rem;
                         height: auto;
                     }
                 }
@@ -901,10 +894,10 @@ body {
             }
         }
 
-
-    
     }
+
 }
+
 @media (min-width: 1025px) {
 
         
@@ -912,7 +905,15 @@ body {
         font-size: 20px;
     }
 
-    #banner {
+    body {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #banner-mobile {
 
         display: none;
     }
@@ -921,44 +922,54 @@ body {
 
         background-color: white;
         display: flex;
-        justify-content: center;
+        padding: 0rem 0rem 0rem 4.5rem;
+        width: 100%;
+        
         img{
 
-           width: 100px;
-           height: 100%;
+           width: 6rem;
+           height: auto;
         }
     }
 
-    #banner-mobile{ 
+    #banner{ 
 
+        width: 100%;
         display: flex;
-        flex-direction: column;
-        margin: 0;
-        padding: 0;
+        flex-direction: row-reverse;
+        justify-content: center;
+        padding: 0rem 5rem;
         
-        #imagem-mobile {
+        #logo{
             
-            display: block;
-            padding: 0;
-
-            img{
-
-                display: block;
-                width: 100%;
-            }
-        }
-        
-        #fundo-verde-mobile{
-
-            
-            background-color: #035144;  
-            padding: 6rem 0;
+            align-items: center; 
             justify-content: center;
-            color: white;
+            
+            
+            #imagem-banner{
+                    
+                width: 100%;
+                height: auto;
+                display: block;
+                object-fit: contain;
+            }
+            
+            
+        }
 
-            #texto {
+        #fundo-verde{
+
+            display: flex;
+            background-color: #035144;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            
+            #conteudo-guia {
                 
                 padding: 2rem;
+                width: 100%;
+                height: auto;
                 
                 h1 {
                     padding: 0.5rem 1rem;
@@ -977,7 +988,7 @@ body {
     
         }
         
-        .fundo-verde-mobile {
+        .fundo-verde {
             background-color: #035144;
             color: white;
         }
@@ -985,11 +996,10 @@ body {
 
 
     #menu-body{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 3rem 0;
-        gap: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        
     
 
         .caixa{
@@ -998,7 +1008,7 @@ body {
             flex-direction: column;
             align-items: center;
             border: 0.1rem ;
-            width: 21rem;
+            width: 17rem;
             height: auto;
             margin: 1rem 0;
             border-radius: 2rem;
@@ -1009,7 +1019,6 @@ body {
             .imagem{
                 background: linear-gradient(to top right, #04a331,#37ED83);
                 border-radius: 1.9rem 1.9rem 0 0;
-                border-bottom: 0.1rem solid black;
             }
 
             .bloco-informacao{
