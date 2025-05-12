@@ -274,7 +274,7 @@ body {
     
     }
 }
-@media (min-width: 376px) and (max-width: 480px) {
+@media (min-width: 376px) and (max-width: 540px) {
 
     html {
 
@@ -501,7 +501,7 @@ body {
     
     }
 }
-@media (min-width: 481px) and (max-width: 768px) {
+@media (min-width: 540px) and (max-width: 768px) {
     
     html{
         font-size: 17px;
@@ -973,12 +973,12 @@ body {
 
     #banner{ 
 
-        width: 100%;
+        width: 45rem;
+        height: auto;
         display: grid;
         grid-template: 4rem 1fr / 1fr 1fr;
         flex-direction: row-reverse;
         justify-content: center;
-        padding: 0rem 5rem;
         
         #logo{
             
@@ -1015,7 +1015,7 @@ body {
                 height: auto;
                 
                 h1 {
-                    font-size: 2.7rem;
+                    font-size: 2rem;
                     padding: 0.5rem 1rem;
                     font-family: 'intelbras medium', arial, sans-serif;
                     justify-content: flex-start;
@@ -1042,14 +1042,14 @@ body {
 
     #menu-body{
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        gap: 1rem; 
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr; 
         justify-content: center; 
         justify-items: center; 
         margin: 0 auto;
         max-width: 1200px; 
-        padding: 2rem 1rem;
+        padding: 2rem 0 0 0;
+        gap: 0.5rem;
 
         .caixa{
                 display: flex;
@@ -1057,7 +1057,7 @@ body {
                 flex-direction: column;
                 align-items: center;
                 border: 0.1rem ;
-                width: 17rem;
+                width: 14rem;
                 height: auto;
                 margin: 1rem 0;
                 border-radius: 2rem;
@@ -1081,9 +1081,11 @@ body {
 
                     h1{
                         font-family: 'intelbras medium', arial, sans-serif;
+                        font-size: 1rem;
                     }
             
                     p{
+                        font-size: 0.8rem;
                         font-family: 'intelbras light', arial, sans-serif;
                         padding: 0 2.5rem 0.5rem ;
                         text-align: center;
@@ -1350,14 +1352,13 @@ body {
 
     #menu-body{
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
-        gap: 1rem; 
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr; 
         justify-content: center; 
         justify-items: center; 
         margin: 0 auto;
         max-width: 1200px; 
-        padding: 2rem 1rem;
+        padding: 2rem 2rem;
 
         .caixa{
                 display: flex;
@@ -1365,7 +1366,7 @@ body {
                 flex-direction: column;
                 align-items: center;
                 border: 0.1rem ;
-                width: 17rem;
+                width: 16rem;
                 height: auto;
                 margin: 1rem 0;
                 border-radius: 2rem;
@@ -1389,12 +1390,14 @@ body {
 
                     h1{
                         font-family: 'intelbras medium', arial, sans-serif;
+                        font-size: 1.2rem;
                     }
             
                     p{
                         font-family: 'intelbras light', arial, sans-serif;
+                        font-size: 1rem;
                         padding: 0 2.5rem 0.5rem ;
-                        text-align: center;
+                        text-align: center;''
                         text-decoration: none;
                     }
 
@@ -1551,7 +1554,7 @@ body {
 
 }
 
-@media (min-width: 1537px) and (max-width: 1980px) {
+@media (min-width: 1537px) {
 
         
     html{
@@ -1783,6 +1786,7 @@ body {
 
        display: grid; 
        width: 100%;
+       max-width: 2000px;
        background-color: white;
        align-items: flex-start;
        justify-content: center; 
